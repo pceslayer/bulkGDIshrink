@@ -1,6 +1,7 @@
 import os,glob,fnmatch
 from gditools import gdishrink
 
+#Function to create directories
 def makedir(make):
 	if not os.path.exists(make):
 		try:
@@ -10,12 +11,14 @@ def makedir(make):
 		else:  
 			print ("Successfully created the directory %s " % make)
 	
+#Get current working directory
 path = os.getcwd()
 
-# define the name of the gdishrank directory to be created
-shrink = path+'shrank'
+#Set external output directory
+shrinkpath = path+'shrank' #Comment out to specify external output drive/directory
+#shrinkpath = 'F:\\shrank' #Uncomment to specify external output drive & directory
 
-makedir(shrink)
+makedir(shrinkpath)
 
 matches = []
 for root, dirnames, filenames in os.walk(path):
@@ -24,5 +27,5 @@ for root, dirnames, filenames in os.walk(path):
 	for match in matches:
 		drive, folder = os.path.splitdrive(match)
 		folder, filename = os.path.split(folder)
-	makedir(shrink+folder)
-	gdishrink(match, shrink+folder)
+	makedir(shrinkpath+folder)
+	gdishrink(match, shrinkpath+folder)
