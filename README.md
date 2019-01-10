@@ -6,6 +6,6 @@ Requires latest gditools.py and iso9660.py from https://sourceforge.net/projects
 Milage may vary depending on how image was dumped.
 
 
-How to Use
+How to Use:
 
-Drop gditools.py, iso9660.py and bulkGDIshrink.py in the root folder containing with the sub directories of GDI images and execute bulkGDIshrink.py.
+Drop gditools.py, iso9660.py and bulkGDIshrink.py in the root folder containing the sub directories of GDI images and execute bulkGDIshrink.py.
