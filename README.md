@@ -12,4 +12,4 @@ Drop gditools.py, iso9660.py and bulkGDIshrink.py in the root folder containing 
 
 Known Issues:
 
-Currently only works prperly in the root of a drive.
+Currently only works porperly in the root of a drive.
