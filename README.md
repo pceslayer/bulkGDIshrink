@@ -13,3 +13,4 @@ Drop gditools.py, iso9660.py and bulkGDIshrink.py in the root folder containing 
 Known Issues:
 
 Currently only works porperly in the root of a drive.
+Requires Python 2.7
